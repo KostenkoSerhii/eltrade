@@ -1,0 +1,42 @@
+.soc-btn
+	appearance: none
+	background: transparent
+	border-radius: 50%
+	width: 38px
+	height: 38px
+	border: 1px solid $white
+	display: inline-flex
+	justify-content: center
+	align-items: center
+	transition: border-color 0.3s
+	svg
+		fill: $white
+		font-size: 19px
+		transition: fill 0.3s
+	+mm
+		&:hover
+			border-color: $green
+			svg
+				fill: $green
+.contact-btn
+	+s('contact-btn')
+	appearance: none
+	background-color: transparent
+	border: none
+	text-align: center
+	padding: 14px 20px  14px 40px
+	position: relative
+	top: 15px
+	display: inline-flex
+	align-items: center
+	justify-content: center
+	span
+		color: $white
+		font-size: 24px
+		font-weight: 400
+		display: inline-block
+		vertical-align: top
+		margin-right: 50px
+	svg
+		font-size: 20px
+		fill: $white

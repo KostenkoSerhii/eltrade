@@ -1,0 +1,56 @@
+.header
+	padding: 0 5px
+	font-size: 0
+	background: $gray2
+	&__inner
+		display: flex
+		justify-content: space-between
+		align-items: center
+		height: 56px
+	&__left
+	&__right
+		display: inline-flex
+		justify-content: flex-end
+		align-items: center
+	&__prices
+	&__logo
+		display: inline-block
+		vertical-align: top
+		img
+			max-width: 195px
+			height: auto
+			max-height: 34px
+	&__user
+		display: inline-flex
+		justify-content: flex-end
+		align-items: center
+		margin-left: 84px
+	&__user-inner
+		a, span
+			font-size: 24px
+			font-weight: 400
+			display: inline-block
+			vertical-align: top
+			color: $white
+			margin-left: 25px
+		a
+			transition: color 0.3s
+			&.is-active
+				color: $green
+			+mm
+				&:hover
+					color: $green
+.lang-list
+	display: inline-block
+	vertical-align: top
+	img
+		width: 30px
+		height: 20px
+	li
+		display: inline-block
+		vertical-align: top
+		margin-right: 19px
+		&:last-of-type
+			margin-right: 0
+	a
+		display: block

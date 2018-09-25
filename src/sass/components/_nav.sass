@@ -1,0 +1,31 @@
+.nav
+	position: relative
+	padding-top: 19px
+	padding-bottom: 22px
+	&__bg
+		position: absolute
+		z-index: -1
+		left: 0
+		top: 0
+		width: 100%
+		height: 100%
+	&__inner
+		display: flex
+		align-items: center
+		justify-content: space-between
+	a
+		display: inline-block
+		vertical-align: top
+		color: $white
+		font-size: 24px
+		transition: background 0.3s
+		padding: 4px 14px
+		border: 1px solid $white
+		border-radius: 20px
+		&.is-active
+			background: $green-d
+		+mm
+			&:hover
+				background: $green-d
+
+

@@ -7,7 +7,7 @@
 =image($image)
   background-image: img-url($image)
 
-=trans($what: all, $dur: 0.2s, $easing: ease)
+=trans($what: all, $dur: 0.3s, $easing: ease)
   transition: $what $dur $easing
 
 =smooth-scroll
@@ -20,6 +20,10 @@
 =gpu
   transform: translate3d(0,0,0)
 
+=mm
+  +rmin(1024)
+    @content
+    
 =md
   +r(1023)
     @content

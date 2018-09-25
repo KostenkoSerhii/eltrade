@@ -2,15 +2,42 @@
 <div class="header">
 	<!--begin l-->
 	<div class="l">
-				<!--begin header__inner-->
-				<div class="header__inner">
-		
+		<!--begin header__inner-->
+		<div class="header__inner">
+			<div class="header__left">
+				{% if headerPrices == true %}
+				<ul class="header__prices">
+					<li>¥ - 0.23 $</li>
+					<li>€ - 0.23 $</li>
+					<li>£ - 0.23 $</li>
+				</ul>
+				{% else %}
+				<a class="header__logo" href="#">
+					<img src="img/logo.png" alt="alt">
+				</a>
+				{% endif %}
+			</div>	
+			<div class="header__right">
+				<ul class="lang-list">
+					<li><a href="#"><img src="img/en.jpg" alt=""></a></li>
+					<li><a href="#"><img src="img/ru.jpg" alt=""></a></li>
+					<li><a href="#"><img src="img/fr.jpg" alt=""></a></li>
+				</ul>
+				<div class="header__user">
+					<a class="soc-btn" href="#">{{mixins.icon('facebook')}}</a>
+					<div class="header__user-inner">
+						<a class="is-active" href="#">Sign In</a>
+						<span>|</span>
+						<a href="#">Sign Up</a>
+					</div>
 				</div>
-				<!--end header__inner-->
-				
+			</div>
+
+		</div>
+		<!--end header__inner-->
+		
 	</div>
 	<!--end l-->
 
 </div>
 <!--end header-->
-		
