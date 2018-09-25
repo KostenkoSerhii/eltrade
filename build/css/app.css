@@ -1,0 +1,159 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5,
+h6, p, blockquote, pre, a, abbr, acronym, address, big,
+cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small,
+strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt,
+dd, ol, ul, li, fieldset, form, label, legend, table, caption,
+tbody, tfoot, thead, tr, th, td, article, aside, canvas, details,
+embed, figure, figcaption, footer, header, hgroup, menu, nav,
+output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
+}
+
+html {
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+img, fieldset, a img {
+  border: none;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+  -webkit-appearance: none;
+}
+
+input[type="submit"],
+button {
+  cursor: pointer;
+}
+
+input[type="submit"]::-moz-focus-inner,
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+textarea {
+  overflow: auto;
+}
+
+input, button {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+div, input, textarea, select, button,
+h1, h2, h3, h4, h5, h6, a, span, a:focus {
+  outline: none;
+}
+
+ul, ol {
+  list-style-type: none;
+}
+
+table {
+  border-spacing: 0;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.icon-facebook {
+  width: 0.53em;
+  height: 1em;
+  fill: #000;
+}
+
+body {
+  background: #FFF;
+  line-height: 1.2;
+  font-size: 18px;
+  font-family: 'Roboto', sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+strong {
+  font-weight: 700;
+}
+
+.title-lg {
+  color: #fff;
+  text-align: center;
+  font-family: Roboto;
+  font-size: 48px;
+}
+
+.title-lg, .title-decor, .title-md {
+  font-weight: 700;
+}
+
+.title-md {
+  color: #939393;
+  font-size: 30px;
+  margin-bottom: 30px;
+}
+
+.title-md--green {
+  color: #94c34a;
+}
+
+.title-m {
+  color: #939393;
+  font-size: 24px;
+  margin-bottom: 25px;
+}
+
+.title-decor {
+  margin-bottom: 40px;
+  font-size: 30px;
+  color: #828282;
+}
+
+.title-decor:after {
+  content: "";
+  position: absolute;
+  bottom: -6px;
+  left: 0;
+  width: 51px;
+  height: 1px;
+  background-color: #464545;
+}
+
+.article p {
+  margin-bottom: 18px;
+}
+
+.article p:last-of-type {
+  margin-bottom: 0;
+}
+
+.l {
+  max-width: 1170px;
+  padding: 0 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.block {
+  display: -ms-flexbox;
+  display: flex;
+}
+
+/*# sourceMappingURL=app.css.map */

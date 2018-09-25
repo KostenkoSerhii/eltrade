@@ -1,0 +1,59 @@
+$white: #fff
+$black: #000
+$gray: #828282
+$gray2: #605f5f
+$gray3: #464545
+$gray4: #939393
+
+$green: #94c34a
+$green2: #78a92b
+$green-d: #40630a
+
+
+body
+	background: #FFF
+	line-height: 1.2
+	font-size: 18px
+	font-family: 'Roboto', sans-serif
+
+a
+	text-decoration: none
+strong
+	font-weight: 700
+
+.title-lg
+	color: $white
+	text-align: center
+	font-family: Roboto
+	font-size: 48px
+.title-lg, .title-decor, .title-md
+	font-weight: 700
+.title-md
+	color: $gray4
+	font-size: 30px
+	margin-bottom: 30px
+	&--green
+		color: $green
+.title-m
+	color: $gray4
+	font-size: 24px
+	margin-bottom: 25px
+
+.title-decor
+	margin-bottom: 40px
+	font-size: 30px
+	color: $gray
+	&:after
+		content: ""
+		position: absolute
+		bottom: -6px
+		left: 0
+		width: 51px
+		height: 1px
+		background-color: $gray3
+
+.article
+	p
+		margin-bottom: 18px
+		&:last-of-type
+			margin-bottom: 0
