@@ -1,0 +1,70 @@
+.hero
+	background-size: cover
+	background-repeat: no-repeat
+	background-position: 50% 50%
+	padding-top: 85px
+	padding-bottom: 5px
+	text-align: center
+	margin-bottom: 50px
+	&__logo
+		display: inline-block
+		vertical-align: top
+		margin-bottom: 75px
+		+md
+			display: none
+	&__logo-mob
+		display: none
+		+md
+			display: inline-block
+			vertical-align: top
+			margin-bottom: 75px
+	.title-lg
+		margin-bottom: 82px
+.welcome
+	padding-bottom: 75px
+	&__inner
+		display: flex
+	&__left
+		flex-basis: percentage(654/1140)
+		flex-grow: 0
+		flex-shrink: 1
+		.decor-block
+			margin-bottom: 80px
+	&__right
+		flex-grow: 1
+		flex-shrink: 0
+.wplate
+	padding: 0px 50px 0
+	position: relative
+	top: -10px
+	&__item
+		width: 204px
+		text-align: center
+		padding: 21px 10px 21px
+		position: relative
+		margin-bottom: 36px
+		margin-left: auto
+		margin-right: auto
+		&:before
+			content: ""
+			position: absolute
+			width: 260px
+			height: 100%
+			top: 0
+			left: 50%
+			margin-left: -130px
+			background-color: $gray
+			transform: skew(-20deg)
+			z-index: -1
+		span
+			color: $white
+			font-size: 20px
+		img
+			position: absolute
+			top: 50%
+			transform: translateY(-50%)
+			left: -108px
+		&--img-r
+			img
+				left: auto
+				right: -108px

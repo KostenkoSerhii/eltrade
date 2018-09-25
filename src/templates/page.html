@@ -1,11 +1,78 @@
 ---
 title: Index page
-navBg: true
+headerPrices: true
+navBg: false
 ---
 {% extends "layouts/_layout.html" %}
 
 {% block content %}
-{% include "components/_nav.html" %}
+<!--begin hero-->
+<div class="hero" style="background-image: url('img/hero-bg.jpg');">
+	<!--begin l-->
+	<div class="l">
+		<img class="hero__logo" src="img/hero-logo.png" alt="alt" >
+		<img class="hero__logo-mob" src="img/hero-logo-mob.png" alt="alt" >
+		<h1 class="title-lg">Comprehensive. Effective. Reliable. </h1>
+		{% include "components/_nav.html" %}
+	</div>
+	<!--end l-->
+
+</div>
+<!--end hero-->
+<!--begin welcome-->
+<div class="welcome">
+	<!--begin l-->
+	<div class="l">
+		<h2 class="title-decor">WELCOME TO ELTRADE GROUP</h2>
+		<!--begin welcome__inner-->
+		<div class="welcome__inner">
+			<!--begin welcome__left-->
+			<div class="welcome__left">
+				<div class="decor-block article">
+					<p>Существует практика передачи средств в управление трейдеру. Гражданский кодекс Российской Федерации в ст. 1013 не допускает доверительного управления исключительно денежными средствами, кроме законодательно предусмотренных случаев. По состоянию на 2018 год право управления денежными средствами имеют банки, ПИФы,ОФБУ, управляющие компании и НПФы, имеющие соответствующие лицензии. При этом они не могут привлекать какие-либо кредиты под залог имущества, находящегося в управлении, в том числе с использованием механизмов маржинальной торговли.</p>
+					<p>Существует практика передачи средств в управление трейдеру. Гражданский кодекс Российской Федерации в ст. 1013 не допускает доверительного управления исключительно денежными средствами, кроме законодательно предусмотренных случаев. По состоянию на 2018 год право управления денежными средствами имеют банки, ПИФы,ОФБУ, управляющие компании и НПФы, имеющие соответствующие лицензии. При этом они не могут привлекать какие-либо кредиты под залог имущества.</p>
+				</div>
+				<a class="btn" href="#" >Read More</a>
+			</div>
+			<!--end welcome__left-->
+			<!--begin welcome__right-->
+			<div class="welcome__right">
+				<div class="wplate">
+					<div class="wplate__item">
+						<span>Up To <strong>3,20% Daily</strong></span>
+						<img src="img/tax.png" alt="alt">
+					</div>
+					<div class="wplate__item wplate__item--img-r">
+						<span><strong>180</strong> business days</span>
+						<img src="img/calendar.png" alt="alt">
+					</div>
+					<div class="wplate__item">
+						<span><strong>Stable Profit</strong></span>
+						<img src="img/money.png" alt="alt">
+					</div>
+					<div class="wplate__item wplate__item--img-r">
+						<span><strong>No fees</strong> on accaunt</span>
+						<img src="img/bank.png" alt="alt">
+					</div>
+					<div class="wplate__item">
+						<span><strong>USD 10</strong> min deposit</span>
+						<img src="img/money2.png" alt="alt">
+					</div>
+				</div>
+			</div>
+			<!--end welcome__right-->
+
+
+		</div>
+		<!--end welcome__inner-->
+		
+	</div>
+	<!--end l-->
+
+</div>
+<!--end welcome-->
+
+
 
 
 

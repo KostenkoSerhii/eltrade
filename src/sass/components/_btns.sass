@@ -40,3 +40,23 @@
 	svg
 		font-size: 20px
 		fill: $white
+.btn
+	appearance: none
+	background: transparent
+	display: inline-block
+	vertical-align: top
+	color: $green2
+	font-size: 18px
+	font-weight: 400
+	min-width: 169px
+	border: 2px solid rgba($green2, 0.56)
+	transition: background 0.3s, color 0.3s
+	border-radius: 25px
+	text-align: center
+	padding: 8px 10px
+	+mm
+		&:hover
+			background: $green2
+			color: $white
+
+			
