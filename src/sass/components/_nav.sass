@@ -2,6 +2,14 @@
 	position: relative
 	padding-top: 19px
 	padding-bottom: 22px
+	+md
+		position: absolute
+		top: 10px
+		left: 0px
+		padding: 0
+		margin-top: 17px
+	+sm
+		margin-top: 0px
 	&__bg
 		position: absolute
 		z-index: -1
@@ -9,10 +17,39 @@
 		top: 0
 		width: 100%
 		height: 100%
+	&__burger
+		display: none
+		position: relative
+		border-top: 2px solid $green
+		border-bottom: 2px solid $green
+		span
+			display: block
+			width: 100%
+			height: 2px
+			+vcenter
+			background: $green
+		+md
+			display: block
+			width: 30px
+			height: 20px
+
+
 	&__inner
 		display: flex
 		align-items: center
 		justify-content: space-between
+		+md
+			display: none
+			// display: block
+			text-align: left
+			background: #fff
+			position: absolute
+			top: calc(100% + 5px)
+			left: 15px
+			width: 250px
+			z-index: 10
+			padding: 15px
+
 	a
 		display: inline-block
 		vertical-align: top
@@ -24,6 +61,19 @@
 		border-radius: 20px
 		&.is-active
 			background: $green-d
+			+md
+				background: none
+		+lg
+			font-size: 18px
+		+md
+			display: block
+			border: none
+			color: $green
+			padding: 0
+			margin-bottom: 10px
+			&:last-of-type
+				margin-bottom: 0
+
 		+mm
 			&:hover
 				background: $green-d
