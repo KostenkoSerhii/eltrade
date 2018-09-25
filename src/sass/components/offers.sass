@@ -1,0 +1,103 @@
+.offers
+	display: flex
+	// align-items: flex-start
+	flex-wrap: wrap
+	padding-bottom: 22px
+	justify-content: flex-start
+	font-size: 0
+	+r(900)
+		display: block
+		text-align: center
+	.offers-item
+		flex-basis: calc(25% - 30px)
+		flex-grow: 1
+		flex-shrink: 1
+		margin-right: 30px
+		&:nth-of-type(4n)
+			margin-right: 0
+		+r(900)
+			&:nth-of-type(2n)
+				margin-right: 0
+		+sm
+			margin-right: 100px
+			&:nth-of-type(2n)
+				margin-right: 100px
+		+r(500)
+			margin-right: auto
+			&:nth-of-type(2n)
+				margin-right: auto
+
+			
+.offers-item
+	background-color: $white
+	border: 1px solid $green
+	box-shadow: 0 0 9px rgba(0, 0, 0, 0.18)
+	margin-bottom: 60px
+	width: 262px
+	display: inline-block
+	vertical-align: top
+	text-align: center
+	+sm
+		margin-left: 100px
+		margin-right: 100px
+	+r(500)
+		margin-left: auto
+		margin-right: auto
+	+mm
+		&:hover
+			.offers-item__head
+				background: #40630a
+				&:before
+					background: #59821b
+	&--pro
+		.offers-item__head
+			background: #939393
+			&:before
+					background: #aaa9a9
+	&__head
+		font-size: 30px
+		color: $white
+		padding: 15px 10px
+		background: $gray
+		position: relative
+		background: $green3
+		overflow: hidden
+		transition: background 0.3s
+		+lg
+			font-size: 20px
+		strong
+			position: relative
+			z-index: 1
+		&:before
+			content: ""
+			position: absolute
+			width: 90%
+			height: 100%
+			left: 50%
+			top: 0
+			transform-origin: 50% 50%
+			background: $green
+			transform: translateX(-50%) skew(-20deg)
+			z-index: 0
+			border-radius: 18px 0px 18px 0px
+			transition: background 0.3s
+	&__inner
+		padding: 38px 15px 25px
+		+md
+			padding-top: 20px
+	&__block
+		font-size: 20px
+		margin-bottom: 21px
+		+md
+			font-size: 16px
+			margin-bottom: 15px
+		&:last-of-type
+			margin-bottom: 27px
+			+md
+				margin-bottom: 20px
+		p
+			margin-bottom: 8px
+			&:last-of-type
+				margin-bottom: 0
+	
+

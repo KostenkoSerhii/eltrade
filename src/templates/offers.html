@@ -1,0 +1,103 @@
+---
+title: Index page
+navBg: true
+navMode: 'nav--mb'
+headerMode: 'header--mb-mob'
+offers: [
+{
+	name: 'Light',
+	min: '10',
+	ratio: '0.80',
+	mode: ''
+},
+{
+	name: 'Light Pro',
+	min: '500',
+	ratio: '1.00',
+	mode: 'offers-item--pro'
+},
+{
+	name: 'Medium',
+	min: '2000',
+	ratio: '1.20',
+	mode: ''
+},
+{
+	name: 'Medium Pro',
+	min: '5000',
+	ratio: '1.40',
+	mode: 'offers-item--pro'
+},
+{
+	name: 'Medium Pro',
+	min: '10000',
+	ratio: '1.60',
+	mode: ''
+},
+{
+	name: 'Strong Pro',
+	min: '15000',
+	ratio: '2.20',
+	mode: 'offers-item--pro'
+},
+{
+	name: 'Aggressive',
+	min: '25000',
+	ratio: '2.80',
+	mode: ''
+},
+{
+	name: 'Aggressive Pro',
+	min: '50000',
+	ratio: '3.20',
+	mode: 'offers-item--pro'
+},
+]
+---
+{% extends "layouts/_layout.html" %}
+
+{% block content %}
+{% include "components/_nav.html" %}
+<!--begin l-->
+<div class="l">
+	<h2 class="title-decor">OFFERS</h2>
+	<div class="decor-block decor-block--sm">
+		Существует практика передачи средств в управление трейдеру. Гражданский кодекс Российской Федерации в ст. 1013 не допускает доверительного управления исключительно денежными средствами, кроме законодательно предусмотренных случаев. По состоянию на 2018 год право управления денежными средствами имеют банки, ПИФы,ОФБУ, управляющие компании и НПФы, имеющие соответствующие лицензии. При этом они не могут привлекать какие-либо кредиты под залог имущества, находящегося в управлении, в том числе с использованием механизмов маржинальной торговли.
+	</div>
+	<!--begin offers-->
+	<div class="offers">
+		{% for item in offers%}
+		<div class="offers-item {{item.mode}}">
+			<div class="offers-item__head">
+				<strong>{{item.name}}</strong>
+			</div>
+			<div class="offers-item__inner">
+				<div class="offers-item__block">
+					<p>Minimal Deposit, USD</p>
+					<p>{{item.min}}</p>
+				</div>
+				<div class="offers-item__block">
+					<p>Daily Ratio, %</p>
+					<p>{{item.min}}</p>
+				</div>
+				<div class="offers-item__block">
+					<p>Investment Term, business Days</p>
+					<p>180</p>
+				</div>
+				<button class="btn">Deposit</button>
+			</div>
+		</div>
+		{% endfor %}
+	</div>
+	<!--end offers-->
+
+</div>
+<!--end l-->
+
+
+
+
+
+
+
+{% endblock %}
