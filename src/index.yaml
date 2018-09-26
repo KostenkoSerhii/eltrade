@@ -7,3 +7,7 @@ PageList:
   ready: 50%
 - file: template.html
   ready: 50%
+- file: login.html
+  ready: 50%
+- file: contact-us.html
+  ready: 50%

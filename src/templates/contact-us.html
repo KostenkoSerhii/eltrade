@@ -1,0 +1,52 @@
+---
+title: Index page
+navBg: true
+---
+{% extends "layouts/_layout.html" %}
+
+{% block content %}
+{% include "components/_nav.html" %}
+
+<!--begin form-page-->
+<div class="form-page" style="background-image: url('img/login-bg.jpg');">
+	<!--begin l-->
+	<div class="l">
+		<div class="spec-form spec-form--contact">
+			<form action="">
+				<h1 class="title-md spec-form__title"><span>Contact us</span><i></i></h1>
+				<div class="spec-form__inner">
+
+					<div class="spec-form__fields">
+						<div class="spec-form__fields-row">
+							<div class="field">
+								<p class="field__title">Name:</p>
+								<input type="text">
+							</div>
+							<div class="field">
+								<p class="field__title">Email:</p>
+								<input type="text">
+							</div>
+						</div>
+						<div class="field ">
+							<p class="field__title">Massage:</p>
+							<textarea></textarea>
+						</div>
+					</div>
+					<div class="spec-form__bottom">
+						<button class="btn" type="submit">Send</button>
+					</div>
+				</div>
+			</form>
+		</div>
+	</div>
+	<!--end l-->
+</div>
+<!--end form-page-->
+
+
+
+
+
+
+
+{% endblock %}

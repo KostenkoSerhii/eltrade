@@ -1,0 +1,59 @@
+---
+title: Index page
+navBg: true
+---
+{% extends "layouts/_layout.html" %}
+
+{% block content %}
+{% include "components/_nav.html" %}
+
+<!--begin form-page-->
+<div class="form-page" style="background-image: url('img/login-bg.jpg');">
+	<!--begin l-->
+	<div class="l">
+		<div class="spec-form">
+			<form action="">
+				<h1 class="title-md spec-form__title"><span>ACCOUNT LOGIN</span><i></i></h1>
+				<div class="spec-form__inner">
+					<p class="spec-form__head-text">IN ORDER TO LOG IN TO YOUR PERSONAL ACCOUNT,<br>
+					enter the username you specified during registration, password</p>
+					<div class="spec-form__fields">
+						<div class="spec-form__fields-row">
+							<div class="field">
+								<p class="field__title">Username:</p>
+								<input type="text">
+							</div>
+							<div class="field">
+								<p class="field__title">Password:</p>
+								<input type="text">
+							</div>
+						</div>
+					</div>
+					<div class="spec-form__bottom">
+						<p>
+							<span class="check">
+								<input type="checkbox" id="check">
+								<label for="check">
+									<i class="check__icon">{{mixins.icon('check')}}</i>
+								</label>
+							</span>
+							I agree 
+							<a class="link link--dark" href="#">Terms and conditions</a>
+						</p>
+						<p>Forgot your password? <a class="link link--dark" href="#">click here</a></p>
+					</div>
+				</div>
+			</form>
+		</div>
+	</div>
+	<!--end l-->
+</div>
+<!--end form-page-->
+
+
+
+
+
+
+
+{% endblock %}

@@ -1,0 +1,124 @@
+.form-page
+	background-size: cover
+	background-position: 50% 50%
+	background-repeat: no-repeat
+	padding-top: 65px
+	padding-bottom: 48px
+.spec-form
+	max-width: 852px
+	margin-left: auto
+	margin-right: auto
+	border-left: 2px solid $green4
+	border-bottom: 2px solid $green4
+	border-right: 2px solid $green4
+	padding: 53px
+	position: relative
+	font-size: 20px
+	
+	+md
+		padding: 30px
+		font-size: 18px
+	+sm
+		padding: 30px 0px 0
+		font-size: 16px
+	&__title
+		position: absolute
+		display: inline-block
+		vertical-align: top
+		top: -14px
+		left: 50%
+		transform: translateX(-50%)
+		width: 100%
+		// overflow: hidden
+		text-align: center
+		line-height: 1
+		color: $green4
+		display: flex
+		align-items: center
+		text-transform: uppercase
+		+md
+			top: -9px
+		i
+			display: block
+			position: absolute
+			width: 51px
+			height: 1px
+			background-color: $green4
+			left: 50%
+			transform: translateX(-50%)
+			bottom: -6px
+		span
+			position: relative
+			flex-grow: 0
+			flex-shrink: 0
+			padding-right: 20px
+			padding-left: 20px
+		&:before, &:after
+			content: ""
+			height: 2px 
+			background: $green4
+			flex-grow: 1
+			flex-shrink: 1
+			display: block
+	&__inner
+		background: rgba(#fff, 0.58)
+		border-radius: 6px
+		padding: 37px 63px 43px
+		+md
+			padding: 30px
+		+sm
+			padding: 20px 10px 20px
+			border-radius: 0px
+	&__head-text
+		max-width: 560px
+		margin-left: auto
+		margin-right: auto
+		text-align: center
+		margin-bottom: 62px
+		+sm
+			margin-bottom: 30px
+		br
+			+sm
+				display: none
+	&__fields
+		margin-bottom: 61px
+		+sm
+			margin-bottom: 10px
+	&__fields-row
+		+clr
+		.field
+			margin-bottom: 35px
+			width: percentage(280/620)
+			float: left
+			+sm
+				float: none
+				width: 100%
+			&:nth-of-type(2n)
+				float: right
+				+sm
+					float: none
+					width: 100%
+	&__bottom
+		text-align: center
+		.check
+			margin-right: 13px
+			position: relative
+			top: 3px
+			+md
+				top: 0
+		p
+			margin-bottom: 30px
+			&:last-of-type
+				margin-bottom: 0
+	.link
+		+md
+			font-size: 18px
+		+sm
+			font-size: 16px
+	&--contact
+		.spec-form__inner
+			padding-top: 63px
+			+md
+				padding-top: 30px
+		.spec-form__fields
+			margin-bottom: 25px

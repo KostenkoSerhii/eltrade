@@ -1,0 +1,55 @@
+.field
+	font-size: 0
+	&__title
+		font-size: 20px
+		margin-bottom: 7px
+		+lg
+			font-size: 16px
+	input, textarea
+		appearance: none
+		width: 100%
+		background-color: white
+		border: 1px solid #c6c5c5
+		padding: 10px 13px
+		font-family: 'Roboto', sans-serif
+		color: $black
+		display: block
+		+placeholder
+			color: $gray
+	input
+		height: 35px
+		padding: 0 13px
+		line-height: 35px
+	textarea
+		min-height: 94px
+		resize: none
+.check
+	position: relative
+	font-size: 0
+	display: inline-block
+	vertical-align: top
+	input
+		display: none
+		&:checked + label
+			.check__icon
+				svg
+					opacity: 1
+	label
+		position: relative
+		display: inline-block
+		vertical-align: top
+		cursor: pointer
+	&__icon
+		width: 20px
+		height: 20px
+		display: inline-flex
+		background-color: white
+		border: 1px solid #b3b3b4
+		position: relative
+		svg
+			fill: $blue
+			font-size: 13px
+			+vcenter
+			opacity: 0
+			top: 46%
+			transition: opacity 0.3s
