@@ -38,6 +38,7 @@
 	justify-content: center
 	align-items: center
 	transition: border-color 0.3s
+
 	svg
 		fill: $white
 		font-size: 19px
@@ -55,13 +56,21 @@
 	text-align: center
 	padding: 14px 20px  14px 40px
 	position: relative
-	top: 15px
 	display: inline-flex
 	align-items: center
 	justify-content: center
+	position: absolute
+	bottom: -15px
+	right: 0
+	transform-origin: 50% 100%
 	+md
 		transform: scale(0.7)
-		top: 24px
+		// top: 24px
+		// bottom: -24px
+		right: -40px
+	+sm
+		position: static
+
 	span
 		color: $white
 		font-size: 24px

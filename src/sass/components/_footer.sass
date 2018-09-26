@@ -3,7 +3,10 @@
 	padding-top: 25px
 	padding-bottom: 15px
 	font-size: 0
+	+sm
+		padding-bottom: 0
 	&__inner
+		position: relative
 		+clr
 	
 	&__left
@@ -24,6 +27,15 @@
 	&__right
 		float: right
 		text-align: right
+		width: 750px
+		// position: relative
+
+		+lg
+			width: 650px
+		+md
+			width: 590px
+		+r(900)
+			width: auto
 		+sm
 			float: none
 			text-align: center
@@ -40,8 +52,11 @@
 		+md
 			max-width: 200px
 	&__nav
-		margin-bottom: 35px
+		margin-bottom: 23px
+
 		+md
+			margin-bottom: 23px
+		+r(900)
 			margin-bottom: 10px
 		+sm
 			margin-bottom: 20px
@@ -86,11 +101,36 @@
 
 .accept-block
 	font-size: 0
+	position: relative
+	text-align: left
+	+r(900)
+		margin-bottom: 30px
 	p
 		color: $white
 		font-size: 18px
 		margin-bottom: 24px
+		transform: translateY(-100%)
+		position: absolute
+		left: 0
+		top: -23px
+		+r(900)
+			position: static
+			transform: none
+			display: inline-block
+			vertical-align: top
+			margin-right: 15px
+		+sm
+			display: block
+			text-align: center
+			margin-bottom: 10px
+			margin-right: 0
 	ul
+		+r(900)
+			display: inline-block
+			vertical-align: top
+		+sm
+			display: block
+			text-align: center
 	li
 		display: inline-block
 		vertical-align: top
