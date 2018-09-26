@@ -71,6 +71,22 @@ strong
 		margin-bottom: 18px
 		&:last-of-type
 			margin-bottom: 0
+.list, .article ul
+	li
+		position: relative
+		padding-left: 21px
+		margin-bottom: 17px
+		&:before
+			content: ""
+			position: absolute
+			left: 0
+			top: 6px
+			width: 8px
+			height: 8px
+			background-color: $gray
+			border-radius: 50%
+		&:last-of-type
+			margin-bottom: 0
 .decor-block
 	position: relative
 	padding-left: 18px
@@ -88,19 +104,23 @@ strong
 		background-color: $gray
 	&--sm
 		font-size: 18px
-.list
-	li
-		position: relative
-		padding-left: 21px
-		margin-bottom: 17px
-		&:before
-			content: ""
-			position: absolute
-			left: 0
-			top: 6px
-			width: 8px
-			height: 8px
-			background-color: $gray
-			border-radius: 50%
-		&:last-of-type
-			margin-bottom: 0
+.link
+	display: inline-block
+	vertical-align: top
+	color: $green
+	font-size: 20px
+	position: relative
+	line-height: 1.1
+	&:after
+		content: ''
+		position: absolute
+		left: 1px
+		right: 1px
+		bottom: 0px
+		height: 1px
+		background: $green
+		transition: opacity 0.3s
+	+mm
+		&:hover
+			&:after
+				opacity: 0
