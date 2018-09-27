@@ -1,0 +1,84 @@
+.table-wrapper
+	margin-bottom: 40px
+	+md
+		overflow-x: scroll
+.table
+	font-size: 0
+	width: 100%
+	+md
+		min-width: 700px
+	&__row
+		display: flex
+		&--head
+			margin-bottom: 4px
+			& + .table__row 
+				border-top: 1px solid #605f5f 
+			.table__cell
+				margin-right: 1px
+				&:last-of-type
+					margin-right: 0
+		&:not(.table__row--head)
+			border-left: 1px solid #605f5f 
+			border-right: 1px solid #605f5f
+			&:last-of-type
+				border-bottom: 1px solid #605f5f 
+				.table__cell
+					border-bottom: none
+					&:first-of-type, &:last-of-type
+						&:before
+							display: none
+			.table__cell
+				&:first-of-type
+					// padding-left: 20px
+					&:before
+						content: ""
+						position: absolute
+						width: 20px
+						background: #fff
+						height: 1px
+						bottom: -1px
+						left: 0
+				&:last-of-type
+					// padding-right: 20px
+					&:before
+						content: ""
+						position: absolute
+						width: 20px
+						background: #fff
+						height: 1px
+						bottom: -1px
+						right: 0
+		.table__cell
+			padding-left: 20px
+			padding-right: 20px
+			&:last-of-type
+				&:after
+					display: none
+	&__cell
+		text-align: center
+		flex-grow: 1
+		flex-shrink: 1
+		font-size: 18px
+		position: relative
+		+lg
+			font-size: 15px
+		&--head
+			color: #fff
+			background-color: #69ad01
+			padding: 8px 10px
+		&--name
+			text-align: left
+		&:not(.table__cell--head)
+			border-bottom: 1px solid #605f5f
+			padding-top: 12px
+			padding-bottom: 12px
+			min-height: 39px
+			&:after
+				content: ""
+				position: absolute
+				height: calc(100% - 23px)
+				width: 1px
+				background: #605f5f
+				right: 0
+				top: 50%
+				transform: translateY(-50%)

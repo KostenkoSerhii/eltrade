@@ -13,3 +13,5 @@ PageList:
   ready: 50%
 - file: account-overview.html
   ready: 50%
+- file: active-deposit.html
+  ready: 50%

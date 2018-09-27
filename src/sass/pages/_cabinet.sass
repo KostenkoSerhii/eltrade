@@ -17,9 +17,13 @@
 		+md
 			padding-left: 0
 			padding-top: 30px
-		.title-decor
-			margin-bottom: 58px
-			text-transform: uppercase
+	&__title
+		margin-bottom: 58px
+		text-transform: uppercase
+		+md
+			margin-bottom: 40px
+		&--big-mb
+			margin-bottom: 90px
 .cplate
 	display: flex
 	// align-items: flex-start
@@ -118,3 +122,35 @@
 		left: 0
 	.field
 		margin-bottom: 13px
+.select-line
+	display: flex
+	align-items: center
+	justify-content: space-between
+	font-size: 0
+	margin-bottom: 33px
+	+sm
+		display: block
+	.select-group
+		margin-right: 20px
+.select-group
+	display: inline-block
+	vertical-align: top
+	+sm
+		display: block
+		margin-bottom: 30px
+	.select-group__title, select
+		display: inline-block
+		vertical-align: top
+	.select-group__title
+		font-size: 18px
+		padding-right: 10px
+		+lg
+			font-size: 16px
+		&--minw
+			min-width: 74px
+	select
+		margin-right: 9px
+		background: transparent
+		border: 1px solid #605f5f
+		&:last-of-type
+			margin-right: 0

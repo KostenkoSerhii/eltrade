@@ -878,6 +878,121 @@ strong {
   fill: #fff;
 }
 
+.table-wrapper {
+  margin-bottom: 40px;
+}
+
+.table {
+  font-size: 0;
+  width: 100%;
+}
+
+.table__row {
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.table__row--head {
+  margin-bottom: 4px;
+}
+
+.table__row--head + .table__row {
+  border-top: 1px solid #605f5f;
+}
+
+.table__row--head .table__cell {
+  margin-right: 1px;
+}
+
+.table__row--head .table__cell:last-of-type {
+  margin-right: 0;
+}
+
+.table__row:not(.table__row--head) {
+  border-left: 1px solid #605f5f;
+  border-right: 1px solid #605f5f;
+}
+
+.table__row:not(.table__row--head):last-of-type {
+  border-bottom: 1px solid #605f5f;
+}
+
+.table__row:not(.table__row--head):last-of-type .table__cell {
+  border-bottom: none;
+}
+
+.table__row:not(.table__row--head):last-of-type .table__cell:first-of-type:before, .table__row:not(.table__row--head):last-of-type .table__cell:last-of-type:before {
+  display: none;
+}
+
+.table__row:not(.table__row--head) .table__cell:first-of-type:before {
+  content: "";
+  position: absolute;
+  width: 20px;
+  background: #fff;
+  height: 1px;
+  bottom: -1px;
+  left: 0;
+}
+
+.table__row:not(.table__row--head) .table__cell:last-of-type:before {
+  content: "";
+  position: absolute;
+  width: 20px;
+  background: #fff;
+  height: 1px;
+  bottom: -1px;
+  right: 0;
+}
+
+.table__row .table__cell {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.table__row .table__cell:last-of-type:after {
+  display: none;
+}
+
+.table__cell {
+  text-align: center;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  -ms-flex-negative: 1;
+  flex-shrink: 1;
+  font-size: 18px;
+  position: relative;
+}
+
+.table__cell--head {
+  color: #fff;
+  background-color: #69ad01;
+  padding: 8px 10px;
+}
+
+.table__cell--name {
+  text-align: left;
+}
+
+.table__cell:not(.table__cell--head) {
+  border-bottom: 1px solid #605f5f;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  min-height: 39px;
+}
+
+.table__cell:not(.table__cell--head):after {
+  content: "";
+  position: absolute;
+  height: calc(100% - 23px);
+  width: 1px;
+  background: #605f5f;
+  right: 0;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
 .footer {
   background: #605f5f;
   padding-top: 25px;
@@ -1530,9 +1645,13 @@ strong {
   padding-top: 50px;
 }
 
-.cabinet__content .title-decor {
+.cabinet__title {
   margin-bottom: 58px;
   text-transform: uppercase;
+}
+
+.cabinet__title--big-mb {
+  margin-bottom: 90px;
 }
 
 .cplate {
@@ -1654,6 +1773,50 @@ strong {
   margin-bottom: 13px;
 }
 
+.select-line {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  font-size: 0;
+  margin-bottom: 33px;
+}
+
+.select-line .select-group {
+  margin-right: 20px;
+}
+
+.select-group {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.select-group .select-group__title, .select-group select {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.select-group .select-group__title {
+  font-size: 18px;
+  padding-right: 10px;
+}
+
+.select-group .select-group__title--minw {
+  min-width: 74px;
+}
+
+.select-group select {
+  margin-right: 9px;
+  background: transparent;
+  border: 1px solid #605f5f;
+}
+
+.select-group select:last-of-type {
+  margin-right: 0;
+}
+
 @media only screen and (min-width: 1024px) {
 
   .link:hover:after {
@@ -1752,6 +1915,10 @@ strong {
     font-size: 20px;
   }
 
+  .table__cell {
+    font-size: 15px;
+  }
+
   .footer__left {
     margin-right: 50px;
   }
@@ -1807,6 +1974,10 @@ strong {
 
   .cplate-item__line-left {
     width: 150px;
+  }
+
+  .select-group .select-group__title {
+    font-size: 16px;
   }
 }
 
@@ -1952,6 +2123,14 @@ strong {
     font-size: 16px;
   }
 
+  .table-wrapper {
+    overflow-x: scroll;
+  }
+
+  .table {
+    min-width: 700px;
+  }
+
   .footer__left {
     margin-right: 25px;
   }
@@ -2052,6 +2231,10 @@ strong {
   .cabinet__content {
     padding-left: 0;
     padding-top: 30px;
+  }
+
+  .cabinet__title {
+    margin-bottom: 40px;
   }
 
   .cplate .cplate-item {
@@ -2420,6 +2603,15 @@ strong {
 
   .cplate-item__line {
     font-size: 13px;
+  }
+
+  .select-line {
+    display: block;
+  }
+
+  .select-group {
+    display: block;
+    margin-bottom: 30px;
   }
 }
 
