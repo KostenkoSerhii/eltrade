@@ -23,6 +23,7 @@
 	textarea
 		min-height: 94px
 		resize: none
+
 .check
 	position: relative
 	font-size: 0
@@ -53,3 +54,35 @@
 			opacity: 0
 			top: 46%
 			transition: opacity 0.3s
+.radio
+	input
+		display: none
+		&:checked + label
+			&:after
+				background: #71a61e
+	label
+		display: inline-block
+		vertical-align: top
+		cursor: pointer
+		position: relative
+		padding-left: 30px
+		&:before, &:after
+			content: ""
+			position: absolute
+			left: 0
+			top: 50%
+			transform: translate(0%, -50%)
+			z-index: 1
+			border-radius: 50%
+		&:before
+			width: 18px
+			height: 18px
+			background: white
+			border: 1px solid #605f5f
+		&:after
+			width: 10px
+			height: 10px
+			transition: background 0.3s
+			z-index: 2
+			background: transparent
+			left: 4px

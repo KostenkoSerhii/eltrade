@@ -168,6 +168,7 @@
 		display: flex
 		+md
 			justify-content: center
+			flex-wrap: wrap
 		+xs
 			display: block
 	.field
@@ -178,9 +179,18 @@
 		+xs
 			display: block
 			margin-bottom: 30px
+			margin-left: auto
+			margin-right: auto
 		input
 			height: 40px
 			line-height: 40px
+		&--big
+			width: 450px
+			+sm
+				display: block
+				width: 100%
+				margin-bottom: 30px
+				margin-right: 0
 
 	&--mb-big
 		margin-bottom: 50px

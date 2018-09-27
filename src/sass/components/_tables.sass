@@ -2,11 +2,16 @@
 	margin-bottom: 40px
 	+md
 		overflow-x: scroll
+	&--sm-mb
+		margin-bottom: 20px
 .table
 	font-size: 0
 	width: 100%
 	+md
 		min-width: 700px
+	&--850w
+		+md
+			min-width: 850px
 	&__row
 		display: flex
 		&--head
@@ -49,8 +54,7 @@
 						bottom: -1px
 						right: 0
 		.table__cell
-			padding-left: 20px
-			padding-right: 20px
+
 			&:last-of-type
 				&:after
 					display: none
@@ -65,7 +69,7 @@
 		&--head
 			color: #fff
 			background-color: #69ad01
-			padding: 8px 10px
+			padding: 8px 5px
 		&--name
 			text-align: left
 		&:not(.table__cell--head)
@@ -73,6 +77,8 @@
 			padding-top: 12px
 			padding-bottom: 12px
 			min-height: 39px
+			padding-left: 20px
+			padding-right: 20px
 			&:after
 				content: ""
 				position: absolute
@@ -82,3 +88,11 @@
 				right: 0
 				top: 50%
 				transform: translateY(-50%)
+	input
+		display: none
+		&:checked ~ .table__cell
+			font-weight: 500
+			label
+				&:after
+					background: #71a61e
+
