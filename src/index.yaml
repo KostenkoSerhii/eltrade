@@ -19,3 +19,7 @@ PageList:
   ready: 50%
 - file: edd-funds.html
   ready: 50%
+- file: earning-history.html
+  ready: 50%
+- file: affilate-program.html
+  ready: 50%

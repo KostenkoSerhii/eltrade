@@ -1756,8 +1756,6 @@ strong {
 .cplate-item__top {
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-align: center;
-  align-items: center;
   margin-bottom: 6px;
 }
 
@@ -1796,6 +1794,12 @@ strong {
 
 .cplate-item__line--left-aligment .cplate-item__line-right {
   text-align: left;
+  margin-right: 0;
+}
+
+.cplate-item__line--left-aligment .is-empty {
+  right: auto;
+  left: 0;
 }
 
 .cplate-item__line-left {
@@ -1813,6 +1817,7 @@ strong {
   flex-grow: 1;
   -ms-flex-negative: 1;
   flex-shrink: 1;
+  margin-right: 20px;
 }
 
 .cplate-item__bottom {
@@ -1827,7 +1832,7 @@ strong {
   position: relative;
   bottom: 3px;
   position: absolute;
-  left: 0;
+  right: 0;
 }
 
 .cplate-item .field {
