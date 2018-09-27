@@ -24,6 +24,8 @@
 			margin-bottom: 40px
 		&--big-mb
 			margin-bottom: 90px
+		&--sm-mb
+			margin-bottom: 28px
 .cplate
 	display: flex
 	// align-items: flex-start
@@ -154,3 +156,107 @@
 		border: 1px solid #605f5f
 		&:last-of-type
 			margin-right: 0
+.cab-block
+	margin-bottom: 33px
+	+md
+		text-align: center
+	p
+		margin-bottom: 25px
+		+md
+			text-align: left
+	&__line
+		display: flex
+		+md
+			justify-content: center
+		+xs
+			display: block
+	.field
+		width: 262px
+		display: inline-block
+		vertical-align: top
+		margin-right: 30px
+		+xs
+			display: block
+			margin-bottom: 30px
+		input
+			height: 40px
+			line-height: 40px
+
+	&--mb-big
+		margin-bottom: 50px
+		+xs
+			margin-bottom: 30px
+.wlist
+	max-width: 770px
+	font-size: 0
+	padding-left: 10px
+	+md
+		padding-left: 0
+		margin-left: auto
+		margin-right: auto
+	+sm
+		max-width: 650px
+	.wradio
+		margin-right: 40px
+		margin-bottom: 30px
+		+md
+			margin: 20px
+		+sm
+			margin: 10px
+	
+.wradio
+	display: inline-block
+	vertical-align: top
+	input
+		display: none
+		&:checked + label
+			border-color: #71a61e
+			&:after
+				background: #71a61e
+
+	label
+		display: block
+		position: relative
+		padding: 10px
+		display: inline-block
+		vertical-align: top
+		width: 157px
+		height: 48px
+		background-color: white
+		border: 1px solid #605f5f
+		cursor: pointer
+		transition: border-color 0.3s
+
+		&:before, &:after
+			content: ""
+			position: absolute
+			left: 0
+			top: 50%
+			transform: translate(-50%, -50%)
+			z-index: 1
+			border-radius: 50%
+		&:before
+			width: 18px
+			height: 18px
+			background: white
+			border: 1px solid #605f5f
+		&:after
+			width: 10px
+			height: 10px
+			transition: background 0.3s
+			z-index: 2
+			background: transparent
+		img
+			width: 100%
+			height: 100%
+			object-fit: contain
+.balans-value
+	border-bottom: 1px solid #605f5f
+	width: 262px
+	text-align: center
+	display: inline-block
+	vertical-align: top
+	span
+		display: inline-block
+		vertical-align: top
+		margin-right: 23px

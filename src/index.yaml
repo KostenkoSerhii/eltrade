@@ -15,3 +15,5 @@ PageList:
   ready: 50%
 - file: active-deposit.html
   ready: 50%
+- file: withdraw.html
+  ready: 50%
