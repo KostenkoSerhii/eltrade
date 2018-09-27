@@ -72,10 +72,46 @@ html {
   box-sizing: inherit;
 }
 
+.icon-account-info {
+  width: 1em;
+  height: 1em;
+  fill: #2C2F33;
+}
+
+.icon-account {
+  width: 0.85em;
+  height: 1em;
+  fill: initial;
+}
+
+.icon-affiliate {
+  width: 1.14em;
+  height: 1em;
+  fill: initial;
+}
+
 .icon-check {
   width: 1.31em;
   height: 1em;
   fill: initial;
+}
+
+.icon-coins {
+  width: 1.07em;
+  height: 1em;
+  fill: initial;
+}
+
+.icon-deposit {
+  width: 1.03em;
+  height: 1em;
+  fill: initial;
+}
+
+.icon-edit {
+  width: 1em;
+  height: 1em;
+  fill: #181713;
 }
 
 .icon-facebook {
@@ -84,16 +120,58 @@ html {
   fill: #000;
 }
 
+.icon-funds {
+  width: 1.14em;
+  height: 1em;
+  fill: initial;
+}
+
+.icon-history {
+  width: 1.06em;
+  height: 1em;
+  fill: initial;
+}
+
 .icon-lock {
   width: 0.83em;
   height: 1em;
   fill: #010101;
 }
 
+.icon-logout {
+  width: 0.93em;
+  height: 1em;
+  fill: initial;
+}
+
 .icon-plane {
   width: 1em;
   height: 1em;
   fill: #333;
+}
+
+.icon-promotion {
+  width: 0.99em;
+  height: 1em;
+  fill: initial;
+}
+
+.icon-refferals {
+  width: 1.09em;
+  height: 1em;
+  fill: initial;
+}
+
+.icon-withdraw-status {
+  width: 1em;
+  height: 1em;
+  fill: initial;
+}
+
+.icon-withdraw {
+  width: 1.14em;
+  height: 1em;
+  fill: initial;
 }
 
 body {
@@ -154,6 +232,14 @@ strong {
   width: 51px;
   height: 1px;
   background-color: #464545;
+}
+
+.title-decor--green {
+  color: #5e8d14;
+}
+
+.title-decor--green:after {
+  background-color: #5e8d14;
 }
 
 .article p {
@@ -362,6 +448,11 @@ strong {
 .btn--big {
   min-width: 243px;
   padding: 10px 10px;
+}
+
+.btn--sm {
+  padding: 5px 20px;
+  min-width: 140px;
 }
 
 .soc-btn {
@@ -730,6 +821,61 @@ strong {
   opacity: 0;
   top: 46%;
   transition: opacity 0.3s;
+}
+
+.sidebar {
+  background-color: #dedddd;
+  padding-bottom: 10px;
+  padding-top: 32px;
+}
+
+.sidebar__list {
+  font-size: 0;
+}
+
+.sidebar__list li {
+  border-top: 5px solid #fff;
+}
+
+.sidebar__list li:last-of-type {
+  border-bottom: 5px solid #fff;
+}
+
+.sidebar__list a {
+  display: block;
+  position: relative;
+  padding-left: 58px;
+  padding-top: 22px;
+  padding-bottom: 22px;
+  padding-right: 15px;
+  font-size: 18px;
+  text-transform: uppercase;
+  color: #605f5f;
+  transition: color 0.3s, background 0.3s;
+}
+
+.sidebar__list a i {
+  display: block;
+  position: absolute;
+  left: 13px;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.sidebar__list a svg {
+  font-size: 27px;
+  fill: #605f5f;
+  transition: fill 0.3s;
+}
+
+.sidebar__list a.is-active {
+  color: #fff;
+  background: #71a61e;
+}
+
+.sidebar__list a.is-active svg {
+  fill: #fff;
 }
 
 .footer {
@@ -1361,6 +1507,153 @@ strong {
   margin-bottom: 25px;
 }
 
+.cabinet__inner {
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.cabinet__sidebar-wrap {
+  -ms-flex-preferred-size: 262px;
+  flex-basis: 262px;
+  -ms-flex-positive: 0;
+  flex-grow: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+}
+
+.cabinet__content {
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  -ms-flex-negative: 1;
+  flex-shrink: 1;
+  padding-left: 30px;
+  padding-top: 50px;
+}
+
+.cabinet__content .title-decor {
+  margin-bottom: 58px;
+  text-transform: uppercase;
+}
+
+.cplate {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.cplate .cplate-item {
+  width: 388px;
+  -ms-flex-positive: 0;
+  flex-grow: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+}
+
+.cplate-item {
+  border: 2px solid #5e8d14;
+  padding: 20px 13px 11px;
+  position: relative;
+  margin-bottom: 39px;
+}
+
+.cplate-item__title {
+  margin-bottom: 0;
+  padding-bottom: 10px;
+  padding-right: 10px;
+  display: inline-block;
+  vertical-align: top;
+  background: #fff;
+  position: absolute;
+  left: -2px;
+  top: 0;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.cplate-item__top {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-bottom: 6px;
+}
+
+.cplate-item__icon {
+  width: 80px;
+  -ms-flex-positive: 0;
+  flex-grow: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+}
+
+.cplate-item__icon svg {
+  width: 50px;
+  height: 50px;
+}
+
+.cplate-item__sub-text {
+  color: #939393;
+  font-size: 16px;
+}
+
+.cplate-item__top-right p {
+  line-height: 1.1;
+}
+
+.cplate-item__top-right--sm {
+  font-size: 15px;
+}
+
+.cplate-item__line {
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 12px;
+  font-size: 17px;
+}
+
+.cplate-item__line--left-aligment .cplate-item__line-right {
+  text-align: left;
+}
+
+.cplate-item__line-left {
+  width: 163px;
+  -ms-flex-positive: 0;
+  flex-grow: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+}
+
+.cplate-item__line-right {
+  position: relative;
+  text-align: right;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  -ms-flex-negative: 1;
+  flex-shrink: 1;
+}
+
+.cplate-item__bottom {
+  text-align: right;
+}
+
+.cplate-item .is-empty {
+  width: 55px;
+  height: 1px;
+  display: block;
+  background: #000;
+  position: relative;
+  bottom: 3px;
+  position: absolute;
+  left: 0;
+}
+
+.cplate-item .field {
+  margin-bottom: 13px;
+}
+
 @media only screen and (min-width: 1024px) {
 
   .link:hover:after {
@@ -1401,6 +1694,15 @@ strong {
     background: #59821b;
   }
 
+  .sidebar__list a:hover {
+    color: #fff;
+    background: #71a61e;
+  }
+
+  .sidebar__list a:hover svg {
+    fill: #fff;
+  }
+
   .footer__nav a:hover {
     color: #94c34a;
   }
@@ -1437,6 +1739,19 @@ strong {
     font-size: 16px;
   }
 
+  .sidebar__list a {
+    padding-left: 40px;
+    font-size: 16px;
+  }
+
+  .sidebar__list a i {
+    left: 9px;
+  }
+
+  .sidebar__list a svg {
+    font-size: 20px;
+  }
+
   .footer__left {
     margin-right: 50px;
   }
@@ -1471,6 +1786,27 @@ strong {
 
   .ref-list__item--middle {
     width: 350px;
+  }
+
+  .cabinet__sidebar-wrap {
+    -ms-flex-preferred-size: 222px;
+    flex-basis: 222px;
+  }
+
+  .cplate .cplate-item {
+    width: 350px;
+  }
+
+  .cplate-item__sub-text {
+    font-size: 14px;
+  }
+
+  .cplate-item__line {
+    font-size: 15px;
+  }
+
+  .cplate-item__line-left {
+    width: 150px;
   }
 }
 
@@ -1580,6 +1916,42 @@ strong {
     margin-bottom: 20px;
   }
 
+  .sidebar {
+    background-color: transparent;
+  }
+
+  .sidebar__list {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+
+  .sidebar__list li:last-of-type {
+    border: 1px solid #dedddd;
+  }
+
+  .sidebar__list li {
+    display: inline-block;
+    vertical-align: top;
+    border: 1px solid #dedddd;
+    margin: 5px;
+  }
+
+  .sidebar__list a {
+    font-size: 14px;
+    padding-left: 35px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 10px;
+  }
+
+  .sidebar__list a svg {
+    font-size: 16px;
+  }
+
   .footer__left {
     margin-right: 25px;
   }
@@ -1671,6 +2043,19 @@ strong {
 
   .spec-form--contact .spec-form__inner {
     padding-top: 30px;
+  }
+
+  .cabinet__inner {
+    display: block;
+  }
+
+  .cabinet__content {
+    padding-left: 0;
+    padding-top: 30px;
+  }
+
+  .cplate .cplate-item {
+    width: 46%;
   }
 }
 
@@ -1820,6 +2205,10 @@ strong {
     display: block;
     margin-left: auto;
     margin-right: auto;
+  }
+
+  .sidebar__list li {
+    width: calc(50% - 10px);
   }
 
   .footer {
@@ -2009,6 +2398,29 @@ strong {
   .spec-form .link {
     font-size: 16px;
   }
+
+  .cplate {
+    display: block;
+  }
+
+  .cplate .cplate-item {
+    max-width: 500px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .cplate-item {
+    padding: 15px 10px 11px;
+  }
+
+  .cplate-item__top-right--sm {
+    font-size: 13px;
+  }
+
+  .cplate-item__line {
+    font-size: 13px;
+  }
 }
 
 @media only screen and (max-width: 599px) {
@@ -2024,6 +2436,21 @@ strong {
 
   .wplate__item span {
     font-size: 14px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+
+  .sidebar__list li {
+    width: 100%;
+    margin: 5px 0;
+  }
+
+  .sidebar__list a {
+    font-size: 13px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    padding-right: 7px;
   }
 }
 

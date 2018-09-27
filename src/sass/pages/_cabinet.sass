@@ -1,0 +1,120 @@
+.cabinet
+	&__inner
+		display: flex
+		+md
+			display: block
+	&__sidebar-wrap
+		flex-basis: 262px
+		flex-grow: 0
+		flex-shrink: 0
+		+lg
+			flex-basis: 222px
+	&__content
+		flex-grow: 1
+		flex-shrink: 1
+		padding-left: 30px
+		padding-top: 50px
+		+md
+			padding-left: 0
+			padding-top: 30px
+		.title-decor
+			margin-bottom: 58px
+			text-transform: uppercase
+.cplate
+	display: flex
+	// align-items: flex-start
+	flex-wrap: wrap
+	justify-content: space-between
+	+sm
+		display: block
+	.cplate-item
+		width: 388px
+		
+		flex-grow: 0
+		flex-shrink: 0
+		+lg
+			width: 350px
+		+md
+			width: 46%
+		+sm
+			max-width: 500px
+			width: 100%
+			margin-left: auto
+			margin-right: auto
+.cplate-item
+	border: 2px solid $green4
+	padding: 20px 13px 11px
+	position: relative
+	margin-bottom: 39px
+	+sm
+		padding: 15px 10px 11px
+	&__title
+		margin-bottom: 0
+		padding-bottom: 10px
+		padding-right: 10px
+		display: inline-block
+		vertical-align: top
+		background: #fff
+		position: absolute
+		left: -2px
+		top: 0
+		transform: translateY(-50%)
+	&__top
+		display: flex
+		align-items: center
+		margin-bottom: 6px
+	&__icon
+		width: 80px
+		flex-grow: 0
+		flex-shrink: 0
+		svg
+			width: 50px
+			height: 50px
+	&__sub-text
+		color: #939393
+		font-size: 16px
+		+lg
+			font-size: 14px
+	&__top-right
+		p
+			line-height: 1.1
+		&--sm
+			font-size: 15px
+			+sm
+				font-size: 13px
+	&__content
+	&__line
+		display: flex
+		margin-bottom: 12px
+		font-size: 17px
+		+lg
+			font-size: 15px
+		+sm
+			font-size: 13px
+		&--left-aligment
+			.cplate-item__line-right
+				text-align: left
+	&__line-left
+		width: 163px
+		flex-grow: 0
+		flex-shrink: 0
+		+lg
+			width: 150px
+	&__line-right
+		position: relative
+		text-align: right
+		flex-grow: 1
+		flex-shrink: 1
+	&__bottom
+		text-align: right
+	.is-empty
+		width: 55px
+		height: 1px
+		display: block
+		background: #000
+		position: relative
+		bottom: 3px
+		position: absolute
+		left: 0
+	.field
+		margin-bottom: 13px

@@ -1,0 +1,81 @@
+.sidebar
+	background-color: #dedddd
+	padding-bottom: 10px
+	padding-top: 32px
+	+md
+		background-color: transparent
+	&__list
+		font-size: 0
+		+md
+			display: flex
+			justify-content: center
+			flex-wrap: wrap
+
+		li
+			border-top: 5px solid #fff 
+			&:last-of-type
+				border-bottom: 5px solid #fff 
+				+md
+					border: 1px solid #dedddd
+			+md
+				display: inline-block
+				vertical-align: top
+				border: 1px solid #dedddd
+				margin: 5px
+			+sm
+				width: calc(50% - 10px)
+			+r(500)
+				width: 100%
+				margin: 5px 0
+		a
+			display: block
+			position: relative
+			padding-left: 58px
+			padding-top: 22px
+			padding-bottom: 22px
+			padding-right: 15px
+			font-size: 18px
+			text-transform: uppercase
+			color: #605f5f
+			transition: color 0.3s, background 0.3s
+			+lg
+				padding-left: 40px
+				font-size: 16px
+			+md
+				font-size: 14px
+				padding-left: 35px
+				padding-top: 10px
+				padding-bottom: 10px
+				padding-right: 10px
+			+r(500)
+				font-size: 13px
+				padding-top: 7px
+				padding-bottom: 7px
+				padding-right: 7px
+			i
+				display: block
+				position: absolute
+				left: 13px
+				top: 50%
+				transform: translateY(-50%)
+				+lg
+					left: 9px
+			svg
+				font-size: 27px
+				fill: #605f5f
+				transition: fill 0.3s
+				+lg
+					font-size: 20px
+				+md
+					font-size: 16px
+			&.is-active
+				color: $white
+				background: #71a61e
+				svg
+					fill: $white
+			+mm
+				&:hover
+					color: $white
+					background: #71a61e
+					svg
+						fill: $white
