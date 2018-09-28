@@ -26,6 +26,8 @@
 			margin-bottom: 90px
 		&--sm-mb
 			margin-bottom: 28px
+		&--m-mb
+			margin-bottom: 40px
 .cplate
 	display: flex
 	// align-items: flex-start
@@ -276,3 +278,65 @@
 		display: inline-block
 		vertical-align: top
 		margin-right: 23px
+.btns-row
+	font-size: 0
+	margin-bottom: 40px
+	+md
+		text-align: center
+	.btn
+		margin-right: 26px
+		margin-bottom: 20px
+		+xs
+			margin-right: 10px
+		+r(500)
+			display: block
+			margin-left: auto
+			margin-right: auto
+code
+	appearance: none
+	font-size: 16px
+	margin-bottom: 40px
+	display: block
+	word-wrap: break-word
+.edit-block
+	margin-bottom: 43px
+	max-width: 750px
+	+sm
+		margin-bottom: 30px
+	&__btns
+		text-align: right
+		margin-top: 23px
+		+sm
+			text-align: center
+.edit-row
+	display: flex
+	
+	margin-bottom: 13px
+	+sm
+		display: block
+		margin-bottom: 15px
+	&__left
+		width: 292px
+		padding-right: 30px
+		flex-grow: 0
+		display: inline-flex
+		align-items: center
+		+sm
+			margin-bottom: 5px
+			width: 100%
+			padding-right: 0
+		img
+			display: inline-block
+			vertical-align: top
+			width: 30px
+			height: 30px
+			margin-right: 24px
+			+sm
+				margin-right: 15px
+	&__right
+		flex-grow: 1
+
+	.field
+		input
+			height: 32px
+			line-height: 32px

@@ -217,6 +217,10 @@ strong {
   margin-bottom: 25px;
 }
 
+.title-m--big-mb {
+  margin-bottom: 36px;
+}
+
 .title-decor {
   margin-bottom: 40px;
   font-size: 30px;
@@ -1715,6 +1719,10 @@ strong {
   margin-bottom: 28px;
 }
 
+.cabinet__title--m-mb {
+  margin-bottom: 40px;
+}
+
 .cplate {
   display: -ms-flexbox;
   display: flex;
@@ -2002,6 +2010,71 @@ strong {
   display: inline-block;
   vertical-align: top;
   margin-right: 23px;
+}
+
+.btns-row {
+  font-size: 0;
+  margin-bottom: 40px;
+}
+
+.btns-row .btn {
+  margin-right: 26px;
+  margin-bottom: 20px;
+}
+
+code {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  font-size: 16px;
+  margin-bottom: 40px;
+  display: block;
+  word-wrap: break-word;
+}
+
+.edit-block {
+  margin-bottom: 43px;
+  max-width: 750px;
+}
+
+.edit-block__btns {
+  text-align: right;
+  margin-top: 23px;
+}
+
+.edit-row {
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 13px;
+}
+
+.edit-row__left {
+  width: 292px;
+  padding-right: 30px;
+  -ms-flex-positive: 0;
+  flex-grow: 0;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.edit-row__left img {
+  display: inline-block;
+  vertical-align: top;
+  width: 30px;
+  height: 30px;
+  margin-right: 24px;
+}
+
+.edit-row__right {
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+}
+
+.edit-row .field input {
+  height: 32px;
+  line-height: 32px;
 }
 
 @media only screen and (min-width: 1024px) {
@@ -2456,6 +2529,10 @@ strong {
   .wlist .wradio {
     margin: 20px;
   }
+
+  .btns-row {
+    text-align: center;
+  }
 }
 
 @media only screen and (max-width: 900px) {
@@ -2524,6 +2601,10 @@ strong {
 }
 
 @media only screen and (max-width: 767px) {
+
+  .title-m--big-mb {
+    margin-bottom: 25px;
+  }
 
   .header {
     padding: 12px 0 10px;
@@ -2844,6 +2925,29 @@ strong {
   .wlist .wradio {
     margin: 10px;
   }
+
+  .edit-block {
+    margin-bottom: 30px;
+  }
+
+  .edit-block__btns {
+    text-align: center;
+  }
+
+  .edit-row {
+    display: block;
+    margin-bottom: 15px;
+  }
+
+  .edit-row__left {
+    margin-bottom: 5px;
+    width: 100%;
+    padding-right: 0;
+  }
+
+  .edit-row__left img {
+    margin-right: 15px;
+  }
 }
 
 @media only screen and (max-width: 599px) {
@@ -2875,6 +2979,10 @@ strong {
   .cab-block--mb-big {
     margin-bottom: 30px;
   }
+
+  .btns-row .btn {
+    margin-right: 10px;
+  }
 }
 
 @media only screen and (max-width: 500px) {
@@ -2889,6 +2997,12 @@ strong {
     padding-top: 7px;
     padding-bottom: 7px;
     padding-right: 7px;
+  }
+
+  .btns-row .btn {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
