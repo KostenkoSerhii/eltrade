@@ -27,3 +27,23 @@ PageList:
   ready: 50%
 - file: edit-profile.html
   ready: 50%
+- file: faq.html
+  ready: 50%
+- file: faq_ru.html
+  ready: 50%
+- file: how-to-start.html
+  ready: 50%
+- file: how-to-start_ru.html
+  ready: 50%
+- file: sec-recomend.html
+  ready: 50%
+- file: sec-recomend_ru.html
+  ready: 50%
+- file: terms-conditions.html
+  ready: 50%
+- file: terms-conditions_ru.html
+  ready: 50%
+- file: our-history.html
+  ready: 50%
+- file: our-history_ru.html
+  ready: 50%
