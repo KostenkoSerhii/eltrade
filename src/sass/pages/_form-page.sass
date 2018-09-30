@@ -60,6 +60,12 @@
 			flex-grow: 1
 			flex-shrink: 1
 			display: block
+	&__sub-title
+		text-align: center
+		margin-bottom: 20px
+		text-transform: uppercase
+		font-weight: 700
+		color: $green
 	&__inner
 		background: rgba(#fff, 0.58)
 		border-radius: 6px
@@ -84,6 +90,11 @@
 		margin-bottom: 61px
 		+sm
 			margin-bottom: 10px
+		&--sm-margins
+			margin-bottom: 30px
+			.spec-form__fields-row
+				.field
+					margin-bottom: 15px
 	&__fields-row
 		+clr
 		.field
@@ -98,6 +109,8 @@
 				+sm
 					float: none
 					width: 100%
+		&--big-mb
+			margin-bottom: 20px
 	&__bottom
 		text-align: center
 		.check
@@ -108,8 +121,8 @@
 				top: 0
 		p
 			margin-bottom: 30px
-			&:last-of-type
-				margin-bottom: 0
+			// &:last-of-type
+			// 	margin-bottom: 0
 	.link
 		+md
 			font-size: 18px

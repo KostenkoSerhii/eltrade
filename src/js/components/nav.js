@@ -1,5 +1,4 @@
 function navInit() {
-	console.log('nav');
 
 	$(".js-burger").on('click', function(){
 		$(".js-nav").slideToggle();

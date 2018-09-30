@@ -51,18 +51,6 @@ offers: [
 	min: '50000',
 	ratio: '3.20',
 	mode: 'offers-item--pro'
-},
-{
-	name: 'Aggressive Pro',
-	min: '50000',
-	ratio: '3.20',
-	mode: 'offers-item--pro'
-},
-{
-	name: 'Aggressive Pro',
-	min: '50000',
-	ratio: '3.20',
-	mode: 'offers-item--pro'
 }
 ]
 ---
@@ -90,11 +78,14 @@ offers: [
 				</div>
 				<div class="offers-item__block">
 					<p>Daily Ratio, %</p>
-					<p>{{item.min}}</p>
+					<p>{{item.ratio}}</p>
 				</div>
 				<div class="offers-item__block">
-					<p>Investment Term, business Days</p>
-					<p>180</p>
+					<p>Investment Term,</p>
+					<p>180 business Days</p>
+				</div>
+				<div class="offers-item__block offers-item__block--sm">
+					<p>principal back</p>
 				</div>
 				<button class="btn">Deposit</button>
 			</div>

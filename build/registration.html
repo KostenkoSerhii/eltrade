@@ -76,31 +76,87 @@
         </div>
         <!--end nav-->
         <!--begin form-page-->
-        <div class="form-page" style="background-image: url('img/contact-us.jpg');">
+        <div class="form-page" style="background-image: url('img/login-bg.jpg');">
           <!--begin l-->
           <div class="l">
-            <div class="spec-form spec-form--contact">
+            <div class="spec-form">
               <form action="">
-                <h1 class="title-md spec-form__title"><span>Contact us</span><i></i></h1>
+                <h1 class="title-md spec-form__title"><span>ACCOUNT REGISTRATION</span><i></i></h1>
                 <div class="spec-form__inner">
-                  <div class="spec-form__fields">
+                  <div class="spec-form__fields spec-form__fields--sm-margins">
+                    <div class="spec-form__sub-title">CREATE A NEW ACCOUNT</div>
                     <div class="spec-form__fields-row">
                       <div class="field">
-                        <p class="field__title">Name:</p>
+                        <p class="field__title">Full name:</p>
                         <input type="text">
                       </div>
                       <div class="field">
-                        <p class="field__title">Email:</p>
+                        <p class="field__title">Username:</p>
                         <input type="text">
                       </div>
                     </div>
-                    <div class="field ">
-                      <p class="field__title">Massage:</p>
-                      <textarea></textarea>
+                    <div class="spec-form__fields-row">
+                      <div class="field">
+                        <p class="field__title">E-mail:</p>
+                        <input type="text">
+                      </div>
+                      <div class="field">
+                        <p class="field__title">Retype E-mail:</p>
+                        <input type="text">
+                      </div>
+                    </div>
+                    <div class="spec-form__fields-row spec-form__fields-row--big-mb">
+                      <div class="field">
+                        <p class="field__title">Password:</p>
+                        <input type="text">
+                      </div>
+                      <div class="field is-error">
+                        <p class="field__title">Confirm password:</p>
+                        <input type="text" value="field with error">
+                      </div>
+                    </div>
+                    <div class="spec-form__sub-title">PAYMENT INFORMATION</div>
+                    <div class="spec-form__fields-row">
+                      <div class="field">
+                        <p class="field__title">Your PerfectMoney Account:</p>
+                        <input type="text">
+                      </div>
+                      <div class="field">
+                        <p class="field__title">Your Payeer Account:</p>
+                        <input type="text">
+                      </div>
+                    </div>
+                    <div class="spec-form__fields-row">
+                      <div class="field">
+                        <p class="field__title">Your Bitcoin Account:</p>
+                        <input type="text">
+                      </div>
+                      <div class="field">
+                        <p class="field__title">Your Litecoin Account:</p>
+                        <input type="text">
+                      </div>
+                    </div>
+                    <div class="spec-form__fields-row">
+                      <div class="field">
+                        <p class="field__title">Your Ethereum Account:</p>
+                        <input type="text">
+                      </div>
                     </div>
                   </div>
                   <div class="spec-form__bottom">
-                    <button class="btn" type="submit">Send</button>
+                    <p>
+                      <span class="check">
+                        <input type="checkbox" id="check">
+                        <label for="check">
+                          <i class="check__icon">
+                            <svg class="icon icon-check">
+                              <use xlink:href="img/sprite.svg#icon-check"></use>
+                            </svg>
+                          </i>
+                        </label>
+                      </span> I agree <a class="link link--dark" href="#">Terms and conditions</a>
+                    </p>
+                    <button type="submit" class="btn">Register</button>
                   </div>
                 </div>
               </form>
